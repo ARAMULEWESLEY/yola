@@ -3,7 +3,7 @@ layout: null
 ---
 {
     "name": "{{ site.title }}",
-    "short_name": "moo",
+    "short_name": "Aramule technologies",
     "icons": [
         {
             "src": "maskable_icon_x192.png",

@@ -1,6 +1,6 @@
-title: moo - The tech consultants
-description: moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world
-url: https://moo.mt
+title: Aramule technologies - The tech consultants
+description: Aramule technologies is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world
+url: https://Aramule technologies.mt
 email: waramule@gmail.com
 exclude: [".jekyll-cache", ".bundle", ".github", "Gemfile*", ".gitignore", "GitVersion.yml", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
 include: [".well-known"]
