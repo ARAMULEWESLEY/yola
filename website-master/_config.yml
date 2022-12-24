@@ -1,0 +1,11 @@
+title: moo - The tech consultants
+description: moo is a tech consultancy company that aims to solve tough problems with technology. We advise, train, audit and research for companies all over the world
+url: https://moo.mt
+email: waramule@gmail.com
+exclude: [".jekyll-cache", ".bundle", ".github", "Gemfile*", ".gitignore", "GitVersion.yml", ".git", "README.md", ".kodiak.toml", ".nojekyll", "LICENSE"]
+include: [".well-known"]
+livereload: true
+theme-color: "#F7F7F7"
+host: 0.0.0.0
+plugins:  # "gems" before Jekyll 3.5
+  - jekyll-environment-variables
