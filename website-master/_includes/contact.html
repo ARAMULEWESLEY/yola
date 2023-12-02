@@ -10,7 +10,9 @@
     
     <div class="contact inner-limit">
       <div id="formContent">
-        <form name="submit-to-google-sheet">
+        < form
+  action="https://formspree.io/f/xwkddjlo"
+  method="POST">
           <div class="form">
             <div class="col">
               <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
@@ -19,7 +21,7 @@
             </div>
             <div class="col">
               <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
-              <button type="submit" aria-label="Send" <a href="mailto:waramule@gmail.com"> >Send Message</button></a>
+              <button type="submit" aria-label="Send"> >Send Message</button></a>
             </div>
           </div>
         </form>
@@ -34,7 +36,8 @@
 <script>
   const webhookURL = '{{ site.env.DISCORD_WEBHOOK }}';
 
-  const form = document.forms["submit-to-waramule@gmail.com"];
+  const form = document.forms[ action="https://formspree.io/f/xwkddjlo"
+  method="POST"];
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
