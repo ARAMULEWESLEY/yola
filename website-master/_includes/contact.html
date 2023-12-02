@@ -11,8 +11,8 @@
     <div class="contact inner-limit">
       <div id="formContent">
         < form
-  action="https://formspree.io/f/xwkddjlo"
-  method="POST">
+          action="https://formspree.io/f/xwkddjlo"
+          method="POST">
           <div class="form">
             <div class="col">
               <input name="name" type="text" placeholder="Your Name" required aria-label="Name" />
@@ -21,45 +21,11 @@
             </div>
             <div class="col">
               <textarea name="message" placeholder="Your message" required aria-label="Message"></textarea>
-              <button type="submit" aria-label="Send"> >Send Message</button></a>
+              <button type="submit"> >Send Message</button>
             </div>
           </div>
         </form>
       </div>
-      <div id="formSubmitted">
-        <h3>Your message has been sent!</h3>
-      </div>
     </div>
 
 </section>
-
-<script>
-  const webhookURL = '{{ site.env.DISCORD_WEBHOOK }}';
-
-  const form = document.forms[ action="https://formspree.io/f/xwkddjlo"
-  method="POST"];
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    var formData = new FormData(form);
-
-    var payload = JSON.stringify({
-      username: formData.get("name"),
-      content: `${formData.get("email")}\r\n${formData.get("phone")}\r\n${formData.get("message")}`
-    });
-
-    fetch(webhookURL, {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: payload
-    })
-      .then((response) => {
-        console.log("Message Sent", response);
-        document.getElementById("formContent").style.display = "none";
-        document.getElementById("formSubmitted").style.display = "inline-block";
-      })
-      .catch((error) => console.error("Message not sent", error.message));
-  });
-</script>
